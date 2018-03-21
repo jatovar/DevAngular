@@ -9,7 +9,9 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
-import { DxDataGridModule } from 'devextreme-angular'; 
+import { DxDataGridModule, DxDateBoxModule } from 'devextreme-angular'; 
+
+import './localization';
 
 @NgModule({
     declarations: [
@@ -21,6 +23,7 @@ import { DxDataGridModule } from 'devextreme-angular';
     ],
     imports: [
         DxDataGridModule,
+        DxDateBoxModule,
         CommonModule,
         HttpModule,
         FormsModule,

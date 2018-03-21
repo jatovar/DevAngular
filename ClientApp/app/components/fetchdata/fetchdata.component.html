@@ -5,3 +5,7 @@
 <p *ngIf="!forecasts"><em>Loading...</em></p>
 
 <dx-data-grid [dataSource]="forecasts"></dx-data-grid>
+<dx-date-box [(value)]="currentDate"
+type="datetime"
+pickerType="rollers">
+</dx-date-box>

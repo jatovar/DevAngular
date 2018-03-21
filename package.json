@@ -59,6 +59,8 @@
     "webpack-merge": "4.1.0",
     "zone.js": "0.8.12",
     "devextreme": "17.2.6",
-    "devextreme-angular": "17.2.6"
+    "devextreme-angular": "17.2.6",
+    "cldr-data": ">30.0.1",
+    "globalize": "^1.1.2"
   }
 }
