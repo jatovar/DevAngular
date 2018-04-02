@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
@@ -18,6 +19,12 @@
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>lib\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

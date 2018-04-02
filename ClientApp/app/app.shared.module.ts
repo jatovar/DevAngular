@@ -9,9 +9,11 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+
 import { DxDataGridModule, DxDateBoxModule } from 'devextreme-angular'; 
 
 import './localization';
+import { CarComponent } from './components/cars/car.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +22,7 @@ import './localization';
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
+        CarComponent
     ],
     imports: [
         DxDataGridModule,
@@ -32,6 +35,7 @@ import './localization';
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'showcars', component: CarComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

@@ -1,0 +1,7 @@
+<h1>Autos el potosi</h1>
+
+<p>Modelos y marcas</p>
+
+<p *ngIf="!cars"><em>Loading...</em></p>
+
+<dx-data-grid [dataSource]="cars"></dx-data-grid>

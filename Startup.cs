@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevAngular.Business;
+using DevAngular.Business.Interfaces;
+using DevAngular.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
@@ -23,6 +26,8 @@ namespace DevAngular
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ICarManager, CarManager>();
+            services.AddTransient<ICarRepository, CarRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

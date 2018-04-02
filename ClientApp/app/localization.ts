@@ -35,4 +35,4 @@ Globalize.load(
 
 Globalize.loadMessages(deMessages);
 
-Globalize.locale('es-MX');
+Globalize.locale('fr-FR');
